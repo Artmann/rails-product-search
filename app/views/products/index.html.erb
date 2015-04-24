@@ -1,0 +1,9 @@
+<ul>
+	<% @products.each do |product| %>
+		<li class="product">
+			<%= image_tag product.image %><br/>
+			<strong><%= product.name %></strong><br/>
+			<span>$<%= product.price %></span>
+		</li>
+	<% end %>
+</ul>
