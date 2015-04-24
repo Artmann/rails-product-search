@@ -1,4 +1,3 @@
-
 ul {
 	list-style: none;
 	overflow: hidden;
@@ -12,5 +11,18 @@ ul {
 			border: solid 1px #ccc;
 			box-shadow: 1px 1px 4px #aaa;
 		}
+	}
+}
+
+form.search {
+	width: 315px;
+	margin: 30px auto;
+
+	input[type=text] {
+		width: 200px;
+	  padding: 5px 10px;
+	}
+	input[type=submit] {
+		width: 80px;
 	}
 }
