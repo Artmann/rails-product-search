@@ -2,7 +2,7 @@
 	<%= text_field_tag :query, @query %>
 	<%= submit_tag "Search" %>
 <% end %>
-<ul>
+<ul class="cars">
 	<% @products.each do |product| %>
 		<li class="product">
 			<%= image_tag product.image %><br/>
