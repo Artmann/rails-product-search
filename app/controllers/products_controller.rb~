@@ -9,8 +9,8 @@ class ProductsController < ApplicationController
   end
 	
 	def suggestions
-		if params[:query]
-			query = params[:query]
+		query = params[:query]
+		if query
 			names = Product.where("name LIKE ?", "%#{query}%").map { |product| product.name }
 		else
 			names = []
